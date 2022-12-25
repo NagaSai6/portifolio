@@ -1,6 +1,6 @@
 import Head from 'next/head'
-
-
+import m from "../public/m.png"
+import Image from 'next/image'
 
 
 export default function Home() {
@@ -14,8 +14,14 @@ export default function Home() {
       </Head>
      <div style={{display : 'flex',justifyContent : "center",alignContent : "center"}}>
             <h1>My Personal Site is under renovation</h1>
+
       <p>Naga Sai</p>
      </div>
+     
+     <div style={{display : 'flex',justifyContent : "center"}}>
+     <Image  src={m} width="600" height={'400'} alt=''></Image>
+     </div>
+   
     </>
   )
 }
